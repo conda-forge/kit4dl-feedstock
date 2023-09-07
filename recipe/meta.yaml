@@ -1,5 +1,5 @@
 {% set name = "kit4dl" %}
-{% set version = "2023.8b1" %}
+{% set version = "2023.9b0" %}
 
 package:
   name: "{{ name|lower }}"
