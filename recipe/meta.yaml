@@ -19,7 +19,7 @@ build:
 requirements:
   host:
     - python >=3.10
-    - pip    
+    - pip
   run:
     - python >=3.10
     - pytorch >=1.11.0,<2.1.0
@@ -46,7 +46,7 @@ test:
     - pip
 
 about:
-  home:  https://github.com/opengeokube/kit4dl/
+  home: https://github.com/opengeokube/kit4dl/
   license: MIT
   license_file: LICENSE
   summary: 'A quick way to start with machine and deep learning'
@@ -56,4 +56,4 @@ about:
 
 extra:
   recipe-maintainers:
-      - jamesWalczak
+    - jamesWalczak
