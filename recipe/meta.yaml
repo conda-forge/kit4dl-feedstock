@@ -1,5 +1,5 @@
 {% set name = "kit4dl" %}
-{% set version = "2023.9b2" %}
+{% set version = "2023.11b0" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/kit4dl-{{ version }}.tar.gz
-  sha256: babe3f949409e2bcd72f135891cac6680f767849b4ed32fffcef90fc7626880e
+  sha256: 6b058642d93b6a111ff36e97cdd9828d6e2b0503ff0ae3f1c3e05a819aacfbfc
 
 build:
   noarch: python
@@ -23,7 +23,7 @@ requirements:
   run:
     - python >=3.10,<3.12
     - pytorch >=1.11.0,<2.1.0
-    - lightning
+    - lightning <=2.1.0.rc0
     - torchmetrics >=0.7.0,<1.1.0
     - numpy >=1.17.2,<=1.25.3
     - pydantic >=2.0.0,<2.2.0
