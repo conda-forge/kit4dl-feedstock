@@ -9,6 +9,7 @@ source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/kit4dl-{{ version }}.tar.gz
   sha256: 75d680a402b30cb3d001c83dddf20ee67a6bd7b066a1ab90f28e2dbbcfdb120c
 
+
 build:
   noarch: python
   number: 0
@@ -23,7 +24,7 @@ requirements:
   run:
     - python >=3.10,<3.12
     - pytorch >=1.11.0,<2.1.0
-    - lightning
+    - lightning <=2.1.0.rc0
     - torchmetrics >=0.7.0,<1.1.0
     - numpy >=1.17.2,<=1.25.3
     - pydantic >=2.0.0,<2.2.0
