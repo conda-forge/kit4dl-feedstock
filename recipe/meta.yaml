@@ -1,5 +1,5 @@
 {% set name = "kit4dl" %}
-{% set version = "2024.5b0" %}
+{% set version = "2024.5b1" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/kit4dl-{{ version }}.tar.gz
-  sha256: 0ea3e0a6f8145964beab3d1025ef152fe592a26b45c1344decbbacc47e67a4ae
+  sha256: 486a9df242770e6ecd52315d3269003f1de2028263eb4b3b7afc0c630108e14b
 
 
 build:
@@ -19,10 +19,10 @@ build:
 
 requirements:
   host:
-    - python >=3.10,<3.11
+    - python >=3.10,<3.12
     - pip
   run:
-    - python >=3.10,<3.11
+    - python >=3.10,<3.12
     - pytorch >=2.1.0
     - lightning >=2.2.4
     - torchmetrics >=1.1.0
@@ -34,7 +34,7 @@ requirements:
     - colorama >=0.4.3,<0.5.0
     - shellingham >=1.3.0,<2.0.0
     - rich >=10.11.0,<14.0.0
-    - typing-extensions >=4.0.0,<4.8.0
+    - typing-extensions >=4.8.0
     - Jinja2 <3.2.0
     - typer
     - toml
