@@ -1,5 +1,5 @@
 {% set name = "kit4dl" %}
-{% set version = "2023.11b1" %}
+{% set version = "2024.5b1" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/kit4dl-{{ version }}.tar.gz
-  sha256: 75d680a402b30cb3d001c83dddf20ee67a6bd7b066a1ab90f28e2dbbcfdb120c
+  sha256: 486a9df242770e6ecd52315d3269003f1de2028263eb4b3b7afc0c630108e14b
 
 
 build:
@@ -23,18 +23,18 @@ requirements:
     - pip
   run:
     - python >=3.10,<3.12
-    - pytorch >=1.11.0,<2.1.0
-    - lightning <=2.1.0.rc0
-    - torchmetrics >=0.7.0,<1.1.0
+    - pytorch >=2.1.0
+    - lightning >=2.2.4
+    - torchmetrics >=1.1.0
     - numpy >=1.17.2,<=1.25.3
-    - pydantic >=2.0.0,<2.2.0
-    - scikit-learn >=1.2.0
+    - pydantic >2.4.0
+    - scikit-learn
     - colormath
     - tqdm >=4.57.0,<4.67.0
     - colorama >=0.4.3,<0.5.0
     - shellingham >=1.3.0,<2.0.0
     - rich >=10.11.0,<14.0.0
-    - typing-extensions >=4.0.0,<4.8.0
+    - typing-extensions >=4.8.0
     - Jinja2 <3.2.0
     - typer
     - toml
