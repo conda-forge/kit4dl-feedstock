@@ -9,7 +9,6 @@ source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/kit4dl-{{ version }}.tar.gz
   sha256: 561460352670649ed1b21e2afb1cb53467198ef12d4380201eec36c5f1633790
 
-
 build:
   noarch: python
   number: 0
