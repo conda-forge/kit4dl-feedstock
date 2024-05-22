@@ -53,7 +53,7 @@ about:
   license_file: LICENSE
   summary: 'A quick way to start with machine and deep learning'
   dev_url: https://github.com/opengeokube/kit4dl
-  doc_url: https://pypi.org/project/kit4dl/
+  doc_url: https://opengeokube.github.io/kit4dl/
   doc_source_url: https://github.com/opengeokube/kit4dl/blob/main/README.md
 
 extra:
