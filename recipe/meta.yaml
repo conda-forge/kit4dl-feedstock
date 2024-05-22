@@ -1,5 +1,5 @@
 {% set name = "kit4dl" %}
-{% set version = "2024.5b1" %}
+{% set version = "2024.5b2" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/kit4dl-{{ version }}.tar.gz
-  sha256: 486a9df242770e6ecd52315d3269003f1de2028263eb4b3b7afc0c630108e14b
+  sha256: 561460352670649ed1b21e2afb1cb53467198ef12d4380201eec36c5f1633790
 
 
 build:
