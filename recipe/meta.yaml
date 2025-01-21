@@ -1,3 +1,4 @@
+{% set python_min = '3.10' %}
 {% set name = "kit4dl" %}
 {% set version = "2024.5b2" %}
 
@@ -6,22 +7,22 @@ package:
   version: "{{ version }}"
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/kit4dl-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/kit4dl-{{ version }}.tar.gz
   sha256: 561460352670649ed1b21e2afb1cb53467198ef12d4380201eec36c5f1633790
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - kit4dl = kit4dl.cli.app:run
 
 requirements:
   host:
-    - python >=3.10,<3.12
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.10,<3.12
+    - python >={{ python_min }},<3.12
     - pytorch >=2.1.0
     - lightning >=2.2.4
     - torchmetrics >=1.1.0
@@ -46,6 +47,7 @@ test:
     - kit4dl --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/opengeokube/kit4dl/

@@ -11,7 +11,7 @@ Summary: A quick way to start with machine and deep learning
 
 Development: https://github.com/opengeokube/kit4dl
 
-Documentation: https://pypi.org/project/kit4dl/
+Documentation: https://opengeokube.github.io/kit4dl/
 
 Current build status
 ====================
